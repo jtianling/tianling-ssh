@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		058531B7683E5E602DFB8A60 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE1D054225FE8A75B20124 /* SessionManager.swift */; };
+		07290474E6E6A3DE2E381186 /* TerminalContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB4D6BB1EA7F2B774DABAC /* TerminalContainerView.swift */; };
+		0D8EFF1F2C806F051B831072 /* SSHManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A6A53882812925EB8B39B3 /* SSHManager.swift */; };
+		0E8D7AF08194AD3BF595F843 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA84AF91AB0CA53EB2ECC6A /* ContentView.swift */; };
+		1C8356FFD42612DEAA10A16F /* SmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33FD8C07433C4561E102A1F /* SmokeTests.swift */; };
+		1F7E0CC7D60D76BA837A9FFA /* SessionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEE7010D962459012F6D0D2 /* SessionManagerTests.swift */; };
+		3FBCD6EA3CFAEFF642580AF6 /* ConnectionConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888B628733D2BBADBA62476 /* ConnectionConfigView.swift */; };
+		42D68D92E2EFDA7B32A5A5C3 /* TLSSHApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439B6E9688D02137743A97D9 /* TLSSHApp.swift */; };
+		4569585148C3F837B98C1F71 /* SessionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FF7CB98F0BE2B406671EE /* SessionListView.swift */; };
+		5F4839D29BD87A6CE5E6CFEC /* SwiftTermBridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C81B06D4E649D3B72698B /* SwiftTermBridgeView.swift */; };
+		990258031A2BBECECA45D752 /* Citadel in Frameworks */ = {isa = PBXBuildFile; productRef = DF7D421759DEE3BD616D55E4 /* Citadel */; };
+		A857987E9E4A8D6FCE28972F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B061EF2428CD58D0B7188AE /* Assets.xcassets */; };
+		B6862A02ACA475477BAED58B /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = 794AF6C0F2826AAF35AF40C2 /* SwiftTerm */; };
+		F289367813A471D4B10762D4 /* ConnectionConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD76843BC02CAAAA48C8B9F /* ConnectionConfigTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1725338F4535E472146682BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBCA8DAD8E8ED923992D77E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A92FB87DFAC67D09BEBAFB01;
+			remoteInfo = TLSSH;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B061EF2428CD58D0B7188AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		439B6E9688D02137743A97D9 /* TLSSHApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLSSHApp.swift; sourceTree = "<group>"; };
+		4CA84AF91AB0CA53EB2ECC6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		574C81B06D4E649D3B72698B /* SwiftTermBridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTermBridgeView.swift; sourceTree = "<group>"; };
+		5EEE7010D962459012F6D0D2 /* SessionManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagerTests.swift; sourceTree = "<group>"; };
+		69A6A53882812925EB8B39B3 /* SSHManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHManager.swift; sourceTree = "<group>"; };
+		6FBB4D6BB1EA7F2B774DABAC /* TerminalContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalContainerView.swift; sourceTree = "<group>"; };
+		7DD76843BC02CAAAA48C8B9F /* ConnectionConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionConfigTests.swift; sourceTree = "<group>"; };
+		97CE1D054225FE8A75B20124 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		A51B1FD5ED18E32761E77E96 /* TLSSH.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TLSSH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A888B628733D2BBADBA62476 /* ConnectionConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionConfigView.swift; sourceTree = "<group>"; };
+		B38FF7CB98F0BE2B406671EE /* SessionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionListView.swift; sourceTree = "<group>"; };
+		E33FD8C07433C4561E102A1F /* SmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeTests.swift; sourceTree = "<group>"; };
+		FE8125EF7EF3A5E8704ABE4A /* TLSSHTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TLSSHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAADF44C16E3FA9C72860852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990258031A2BBECECA45D752 /* Citadel in Frameworks */,
+				B6862A02ACA475477BAED58B /* SwiftTerm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17E6225398295DF4C5CBAF38 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				A888B628733D2BBADBA62476 /* ConnectionConfigView.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		694B000D5A4EBB2D35514B2B /* SSH */ = {
+			isa = PBXGroup;
+			children = (
+				69A6A53882812925EB8B39B3 /* SSHManager.swift */,
+			);
+			path = SSH;
+			sourceTree = "<group>";
+		};
+		6E4899E731576F40A40885B7 = {
+			isa = PBXGroup;
+			children = (
+				3B061EF2428CD58D0B7188AE /* Assets.xcassets */,
+				BD8C39A95133C2908D5EF07B /* App */,
+				17E6225398295DF4C5CBAF38 /* Connection */,
+				DA658F93C89A1CBDE7F32274 /* Session */,
+				694B000D5A4EBB2D35514B2B /* SSH */,
+				8160E7184D01AC4A060A1C72 /* Terminal */,
+				A7755FB8E38A1B5C1305BAE8 /* TLSSHTests */,
+				F8C19BF66EC7517F635DCC46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8160E7184D01AC4A060A1C72 /* Terminal */ = {
+			isa = PBXGroup;
+			children = (
+				574C81B06D4E649D3B72698B /* SwiftTermBridgeView.swift */,
+				6FBB4D6BB1EA7F2B774DABAC /* TerminalContainerView.swift */,
+			);
+			path = Terminal;
+			sourceTree = "<group>";
+		};
+		A7755FB8E38A1B5C1305BAE8 /* TLSSHTests */ = {
+			isa = PBXGroup;
+			children = (
+				7DD76843BC02CAAAA48C8B9F /* ConnectionConfigTests.swift */,
+				5EEE7010D962459012F6D0D2 /* SessionManagerTests.swift */,
+				E33FD8C07433C4561E102A1F /* SmokeTests.swift */,
+			);
+			path = TLSSHTests;
+			sourceTree = "<group>";
+		};
+		BD8C39A95133C2908D5EF07B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4CA84AF91AB0CA53EB2ECC6A /* ContentView.swift */,
+				439B6E9688D02137743A97D9 /* TLSSHApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DA658F93C89A1CBDE7F32274 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				B38FF7CB98F0BE2B406671EE /* SessionListView.swift */,
+				97CE1D054225FE8A75B20124 /* SessionManager.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		F8C19BF66EC7517F635DCC46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A51B1FD5ED18E32761E77E96 /* TLSSH.app */,
+				FE8125EF7EF3A5E8704ABE4A /* TLSSHTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A92FB87DFAC67D09BEBAFB01 /* TLSSH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 329FA063C73FA506398DBCC0 /* Build configuration list for PBXNativeTarget "TLSSH" */;
+			buildPhases = (
+				BA3CE3C0F1FBBED660C7D08D /* Sources */,
+				C215A3356B3C652E1DAFC0C9 /* Resources */,
+				BAADF44C16E3FA9C72860852 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLSSH;
+			packageProductDependencies = (
+				DF7D421759DEE3BD616D55E4 /* Citadel */,
+				794AF6C0F2826AAF35AF40C2 /* SwiftTerm */,
+			);
+			productName = TLSSH;
+			productReference = A51B1FD5ED18E32761E77E96 /* TLSSH.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF4E0ED033FE54148C887F2D /* TLSSHTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C495A2E6EDCD6D45FCD97C95 /* Build configuration list for PBXNativeTarget "TLSSHTests" */;
+			buildPhases = (
+				60ED0BA28144E25EC38E3299 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36893A620A8D23BD7A3B250B /* PBXTargetDependency */,
+			);
+			name = TLSSHTests;
+			packageProductDependencies = (
+			);
+			productName = TLSSHTests;
+			productReference = FE8125EF7EF3A5E8704ABE4A /* TLSSHTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBCA8DAD8E8ED923992D77E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A92FB87DFAC67D09BEBAFB01 = {
+						DevelopmentTeam = VF5HPZNKTM;
+					};
+					EF4E0ED033FE54148C887F2D = {
+						DevelopmentTeam = VF5HPZNKTM;
+					};
+				};
+			};
+			buildConfigurationList = 38B4224A50BDE0039E85426F /* Build configuration list for PBXProject "tianling-ssh" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 6E4899E731576F40A40885B7;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CDDD52D215689030CC0806A1 /* XCRemoteSwiftPackageReference "Citadel" */,
+				3792EE784BD83F83734007F9 /* XCRemoteSwiftPackageReference "SwiftTerm" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A92FB87DFAC67D09BEBAFB01 /* TLSSH */,
+				EF4E0ED033FE54148C887F2D /* TLSSHTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C215A3356B3C652E1DAFC0C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A857987E9E4A8D6FCE28972F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60ED0BA28144E25EC38E3299 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F289367813A471D4B10762D4 /* ConnectionConfigTests.swift in Sources */,
+				1F7E0CC7D60D76BA837A9FFA /* SessionManagerTests.swift in Sources */,
+				1C8356FFD42612DEAA10A16F /* SmokeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA3CE3C0F1FBBED660C7D08D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBCD6EA3CFAEFF642580AF6 /* ConnectionConfigView.swift in Sources */,
+				0E8D7AF08194AD3BF595F843 /* ContentView.swift in Sources */,
+				0D8EFF1F2C806F051B831072 /* SSHManager.swift in Sources */,
+				4569585148C3F837B98C1F71 /* SessionListView.swift in Sources */,
+				058531B7683E5E602DFB8A60 /* SessionManager.swift in Sources */,
+				5F4839D29BD87A6CE5E6CFEC /* SwiftTermBridgeView.swift in Sources */,
+				42D68D92E2EFDA7B32A5A5C3 /* TLSSHApp.swift in Sources */,
+				07290474E6E6A3DE2E381186 /* TerminalContainerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36893A620A8D23BD7A3B250B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A92FB87DFAC67D09BEBAFB01 /* TLSSH */;
+			targetProxy = 1725338F4535E472146682BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A87ACFF998B2A808DE804B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VF5HPZNKTM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tianlingtech.tlssh;
+				PRODUCT_NAME = "TL-SSH";
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1930B998810C3EF959D26F29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8323DEF64D4844874DDFFE10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		84328891DE9A133EE926B950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VF5HPZNKTM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tianlingtech.tlssh;
+				PRODUCT_NAME = "TL-SSH";
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D3A087F9F7956FAE9389E7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VF5HPZNKTM;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tianlingtech.tlssh.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TL-SSH.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TL-SSH";
+			};
+			name = Debug;
+		};
+		AFE774E6B0983C67E696B623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VF5HPZNKTM;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tianlingtech.tlssh.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TL-SSH.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TL-SSH";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		329FA063C73FA506398DBCC0 /* Build configuration list for PBXNativeTarget "TLSSH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84328891DE9A133EE926B950 /* Debug */,
+				0A87ACFF998B2A808DE804B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		38B4224A50BDE0039E85426F /* Build configuration list for PBXProject "tianling-ssh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8323DEF64D4844874DDFFE10 /* Debug */,
+				1930B998810C3EF959D26F29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C495A2E6EDCD6D45FCD97C95 /* Build configuration list for PBXNativeTarget "TLSSHTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D3A087F9F7956FAE9389E7D /* Debug */,
+				AFE774E6B0983C67E696B623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3792EE784BD83F83734007F9 /* XCRemoteSwiftPackageReference "SwiftTerm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/migueldeicaza/SwiftTerm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.13.0;
+			};
+		};
+		CDDD52D215689030CC0806A1 /* XCRemoteSwiftPackageReference "Citadel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orlandos-nl/Citadel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		794AF6C0F2826AAF35AF40C2 /* SwiftTerm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3792EE784BD83F83734007F9 /* XCRemoteSwiftPackageReference "SwiftTerm" */;
+			productName = SwiftTerm;
+		};
+		DF7D421759DEE3BD616D55E4 /* Citadel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDDD52D215689030CC0806A1 /* XCRemoteSwiftPackageReference "Citadel" */;
+			productName = Citadel;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CBCA8DAD8E8ED923992D77E4 /* Project object */;
+}

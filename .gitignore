@@ -1,0 +1,9 @@
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.swiftpm/
+.claude/
+.agents/
+AGENTS.md
+CLAUDE.md
