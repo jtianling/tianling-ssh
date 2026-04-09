@@ -45,8 +45,8 @@ open tianling-ssh.xcodeproj
 
 ## 依赖
 
-- [Citadel](https://github.com/orlandos-nl/Citadel) - 基于 SwiftNIO 的 SSH 客户端库
 - [SwiftTerm](https://github.com/migueldeicaza/SwiftTerm) - VT100 / xterm 终端模拟器和 UIKit view
+- [Citadel](https://github.com/orlandos-nl/Citadel) - 基于 SwiftNIO 的 SSH 客户端库
 
 ## 项目结构
 
@@ -68,7 +68,7 @@ Terminal/
 
 ## 致谢
 
-本项目依赖 Miguel de Icaza 的 [SwiftTerm](https://github.com/migueldeicaza/SwiftTerm) 实现终端模拟与渲染.
+本项目依赖 Joannis Orlandos 的 [Citadel](https://github.com/orlandos-nl/Citadel) 实现 SSH 协议, 依赖 Miguel de Icaza 的 [SwiftTerm](https://github.com/migueldeicaza/SwiftTerm) 实现终端模拟与渲染.
 
 ## 许可证
 

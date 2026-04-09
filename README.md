@@ -45,8 +45,8 @@ open tianling-ssh.xcodeproj
 
 ## Dependencies
 
-- [Citadel](https://github.com/orlandos-nl/Citadel) - SSH client library built on SwiftNIO
 - [SwiftTerm](https://github.com/migueldeicaza/SwiftTerm) - VT100 / xterm terminal emulator and UIKit view
+- [Citadel](https://github.com/orlandos-nl/Citadel) - SSH client library built on SwiftNIO
 
 ## Project Structure
 
@@ -68,7 +68,7 @@ Terminal/
 
 ## Acknowledgements
 
-This project relies on [SwiftTerm](https://github.com/migueldeicaza/SwiftTerm) by Miguel de Icaza for terminal emulation and rendering.
+This project relies on [Citadel](https://github.com/orlandos-nl/Citadel) by Joannis Orlandos for SSH protocol implementation, and [SwiftTerm](https://github.com/migueldeicaza/SwiftTerm) by Miguel de Icaza for terminal emulation and rendering.
 
 ## License
 
