@@ -49,7 +49,8 @@ final class SSHManager {
   private nonisolated(unsafe) var keyboardDisconnectObserver: (any NSObjectProtocol)?
 
   init() {
-    let view = SwiftTerm.TerminalView(frame: .zero, font: nil)
+    let terminalFont = UIFont(name: "HackNFM-Regular", size: 14)
+    let view = SwiftTerm.TerminalView(frame: .zero, font: terminalFont)
     view.nativeBackgroundColor = .black
     self.terminalView = view
     view.terminalDelegate = self
@@ -318,7 +319,8 @@ final class SSHManager {
                     continue
                   }
 
-                  strongSelf.terminalView.feed(byteArray: bytes[...])
+                  let processed = SSHManager.forceTextPresentation(bytes[...])
+                  strongSelf.terminalView.feed(byteArray: processed[...])
                 }
               } catch {
                 if strongSelf.connectionState == .connected {
@@ -375,6 +377,102 @@ final class SSHManager {
         pixelHeight: 0
       )
     }
+  }
+
+  // MARK: - VS15 text presentation
+
+  private static let vs15Bytes: [UInt8] = [0xEF, 0xB8, 0x8E]
+
+  private static func needsTextSelector(_ scalar: UInt32) -> Bool {
+    if scalar == 0xFE0E || scalar == 0xFE0F
+      || scalar == 0x200D || scalar == 0x20E3
+    {
+      return false
+    }
+
+    if let us = Unicode.Scalar(scalar), us.properties.isEmoji {
+      return true
+    }
+
+    switch scalar {
+    case 0x2300...0x23FF,
+         0x25A0...0x25FF,
+         0x2600...0x26FF,
+         0x2700...0x27BF,
+         0x2B00...0x2BFF:
+      return true
+
+    default:
+      return false
+
+    }
+  }
+
+  static func forceTextPresentation(
+    _ bytes: ArraySlice<UInt8>
+  ) -> [UInt8] {
+    var result = [UInt8]()
+    result.reserveCapacity(bytes.count + bytes.count / 8)
+    var i = bytes.startIndex
+
+    while i < bytes.endIndex {
+      let b = bytes[i]
+
+      if b < 0x80 {
+        result.append(b)
+        i += 1
+        continue
+      }
+
+      let len: Int
+      if b < 0xC0 {
+        result.append(b)
+        i += 1
+        continue
+      } else if b < 0xE0 {
+        len = 2
+      } else if b < 0xF0 {
+        len = 3
+      } else {
+        len = 4
+      }
+
+      let seqEnd = i + len
+      if seqEnd > bytes.endIndex {
+        result.append(contentsOf: bytes[i...])
+        break
+      }
+
+      result.append(contentsOf: bytes[i..<seqEnd])
+
+      if len == 2 || len == 3 {
+        let scalar: UInt32
+        if len == 2 {
+          scalar = (UInt32(bytes[i] & 0x1F) << 6)
+            | UInt32(bytes[i + 1] & 0x3F)
+        } else {
+          scalar = (UInt32(bytes[i] & 0x0F) << 12)
+            | (UInt32(bytes[i + 1] & 0x3F) << 6)
+            | UInt32(bytes[i + 2] & 0x3F)
+        }
+
+        if needsTextSelector(scalar) {
+          let nextI = seqEnd
+          let alreadyHasVS = nextI + 2 < bytes.endIndex
+            && bytes[nextI] == 0xEF
+            && bytes[nextI + 1] == 0xB8
+            && (bytes[nextI + 2] == 0x8E || bytes[nextI + 2] == 0x8F)
+
+          if !alreadyHasVS {
+            result.append(contentsOf: vs15Bytes)
+          }
+        }
+      }
+
+      i = seqEnd
+    }
+
+    return result
   }
 }
 

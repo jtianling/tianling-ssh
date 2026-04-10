@@ -17,10 +17,15 @@
 		42D68D92E2EFDA7B32A5A5C3 /* TLSSHApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439B6E9688D02137743A97D9 /* TLSSHApp.swift */; };
 		4569585148C3F837B98C1F71 /* SessionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38FF7CB98F0BE2B406671EE /* SessionListView.swift */; };
 		5F4839D29BD87A6CE5E6CFEC /* SwiftTermBridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C81B06D4E649D3B72698B /* SwiftTermBridgeView.swift */; };
+		95FD0B1F62779ED662E9C5A5 /* HackNerdFontMono-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13B686B2DA099E4129BAEB2A /* HackNerdFontMono-BoldItalic.ttf */; };
 		990258031A2BBECECA45D752 /* Citadel in Frameworks */ = {isa = PBXBuildFile; productRef = DF7D421759DEE3BD616D55E4 /* Citadel */; };
+		9A7EFAC8957A5DCF76BC0595 /* HackNerdFontMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7542A6F940203079DEC0B39 /* HackNerdFontMono-Bold.ttf */; };
 		A857987E9E4A8D6FCE28972F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B061EF2428CD58D0B7188AE /* Assets.xcassets */; };
+		AE35888F5FFD535AEE8A4798 /* HackNerdFontMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A52728552324F4B6366F500E /* HackNerdFontMono-Regular.ttf */; };
 		B6862A02ACA475477BAED58B /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = 794AF6C0F2826AAF35AF40C2 /* SwiftTerm */; };
+		DAFE453199B2A71F6C147753 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 02FD14BCF0F13E26A21A384B /* LICENSE.md */; };
 		F289367813A471D4B10762D4 /* ConnectionConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD76843BC02CAAAA48C8B9F /* ConnectionConfigTests.swift */; };
+		FC30564C3B0D17640BDC2873 /* HackNerdFontMono-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9E63E6BEB311F61DE0E3E0E /* HackNerdFontMono-Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02FD14BCF0F13E26A21A384B /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		13B686B2DA099E4129BAEB2A /* HackNerdFontMono-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HackNerdFontMono-BoldItalic.ttf"; sourceTree = "<group>"; };
 		3B061EF2428CD58D0B7188AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		439B6E9688D02137743A97D9 /* TLSSHApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLSSHApp.swift; sourceTree = "<group>"; };
+		48067DD5FF5C8A61320AA7A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4CA84AF91AB0CA53EB2ECC6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		574C81B06D4E649D3B72698B /* SwiftTermBridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTermBridgeView.swift; sourceTree = "<group>"; };
 		5EEE7010D962459012F6D0D2 /* SessionManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagerTests.swift; sourceTree = "<group>"; };
@@ -44,8 +52,11 @@
 		7DD76843BC02CAAAA48C8B9F /* ConnectionConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionConfigTests.swift; sourceTree = "<group>"; };
 		97CE1D054225FE8A75B20124 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		A51B1FD5ED18E32761E77E96 /* TLSSH.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TLSSH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52728552324F4B6366F500E /* HackNerdFontMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HackNerdFontMono-Regular.ttf"; sourceTree = "<group>"; };
 		A888B628733D2BBADBA62476 /* ConnectionConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionConfigView.swift; sourceTree = "<group>"; };
 		B38FF7CB98F0BE2B406671EE /* SessionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionListView.swift; sourceTree = "<group>"; };
+		B7542A6F940203079DEC0B39 /* HackNerdFontMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HackNerdFontMono-Bold.ttf"; sourceTree = "<group>"; };
+		D9E63E6BEB311F61DE0E3E0E /* HackNerdFontMono-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HackNerdFontMono-Italic.ttf"; sourceTree = "<group>"; };
 		E33FD8C07433C4561E102A1F /* SmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeTests.swift; sourceTree = "<group>"; };
 		FE8125EF7EF3A5E8704ABE4A /* TLSSHTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TLSSHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,6 +82,19 @@
 			path = Connection;
 			sourceTree = "<group>";
 		};
+		2FBB248EBF09542C24ED43B6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B7542A6F940203079DEC0B39 /* HackNerdFontMono-Bold.ttf */,
+				13B686B2DA099E4129BAEB2A /* HackNerdFontMono-BoldItalic.ttf */,
+				D9E63E6BEB311F61DE0E3E0E /* HackNerdFontMono-Italic.ttf */,
+				A52728552324F4B6366F500E /* HackNerdFontMono-Regular.ttf */,
+				02FD14BCF0F13E26A21A384B /* LICENSE.md */,
+			);
+			name = Fonts;
+			path = Resources/Fonts;
+			sourceTree = "<group>";
+		};
 		694B000D5A4EBB2D35514B2B /* SSH */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +109,7 @@
 				3B061EF2428CD58D0B7188AE /* Assets.xcassets */,
 				BD8C39A95133C2908D5EF07B /* App */,
 				17E6225398295DF4C5CBAF38 /* Connection */,
+				2FBB248EBF09542C24ED43B6 /* Fonts */,
 				DA658F93C89A1CBDE7F32274 /* Session */,
 				694B000D5A4EBB2D35514B2B /* SSH */,
 				8160E7184D01AC4A060A1C72 /* Terminal */,
@@ -116,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				4CA84AF91AB0CA53EB2ECC6A /* ContentView.swift */,
+				48067DD5FF5C8A61320AA7A1 /* Info.plist */,
 				439B6E9688D02137743A97D9 /* TLSSHApp.swift */,
 			);
 			path = App;
@@ -228,6 +254,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A857987E9E4A8D6FCE28972F /* Assets.xcassets in Resources */,
+				9A7EFAC8957A5DCF76BC0595 /* HackNerdFontMono-Bold.ttf in Resources */,
+				95FD0B1F62779ED662E9C5A5 /* HackNerdFontMono-BoldItalic.ttf in Resources */,
+				FC30564C3B0D17640BDC2873 /* HackNerdFontMono-Italic.ttf in Resources */,
+				AE35888F5FFD535AEE8A4798 /* HackNerdFontMono-Regular.ttf in Resources */,
+				DAFE453199B2A71F6C147753 /* LICENSE.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,16 +308,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VF5HPZNKTM;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tianlingtech.tlssh;
 				PRODUCT_NAME = "TL-SSH";
 				SDKROOT = iphoneos;
@@ -422,16 +449,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VF5HPZNKTM;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tianlingtech.tlssh;
 				PRODUCT_NAME = "TL-SSH";
 				SDKROOT = iphoneos;

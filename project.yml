@@ -34,19 +34,32 @@ targets:
       - Session
       - SSH
       - Terminal
+      - path: Resources/Fonts
+        buildPhase: resources
     dependencies:
       - package: Citadel
       - package: SwiftTerm
+    info:
+      path: App/Info.plist
+      properties:
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UIApplicationSupportsIndirectInputEvents: true
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations~iphone:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UIAppFonts:
+          - HackNerdFontMono-Regular.ttf
+          - HackNerdFontMono-Bold.ttf
+          - HackNerdFontMono-Italic.ttf
+          - HackNerdFontMono-BoldItalic.ttf
     settings:
       base:
         SWIFT_VERSION: "5.0"
         SWIFT_STRICT_CONCURRENCY: minimal
-        GENERATE_INFOPLIST_FILE: YES
         DEVELOPMENT_TEAM: VF5HPZNKTM
-        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
-        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
-        INFOPLIST_KEY_UILaunchScreen_Generation: YES
-        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
         PRODUCT_BUNDLE_IDENTIFIER: com.tianlingtech.tlssh
         PRODUCT_NAME: TL-SSH
         MARKETING_VERSION: "0.2.0"
