@@ -68,7 +68,7 @@ Terminal/
 
 ## 致谢
 
-本项目依赖 Joannis Orlandos 的 [Citadel](https://github.com/orlandos-nl/Citadel) 实现 SSH 协议, 依赖 Miguel de Icaza 的 [SwiftTerm](https://github.com/migueldeicaza/SwiftTerm) 实现终端模拟与渲染.
+本项目依赖 Joannis Orlandos 的 [Citadel](https://github.com/orlandos-nl/Citadel) 实现 SSH 协议, 依赖 Miguel de Icaza 的 [SwiftTerm](https://github.com/migueldeicaza/SwiftTerm) 实现终端模拟与渲染, 使用 [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts) 作为终端字体以支持 Powerline 和图标字形.
 
 ## 许可证
 

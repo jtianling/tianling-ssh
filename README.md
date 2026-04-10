@@ -68,7 +68,7 @@ Terminal/
 
 ## Acknowledgements
 
-This project relies on [Citadel](https://github.com/orlandos-nl/Citadel) by Joannis Orlandos for SSH protocol implementation, and [SwiftTerm](https://github.com/migueldeicaza/SwiftTerm) by Miguel de Icaza for terminal emulation and rendering.
+This project relies on [Citadel](https://github.com/orlandos-nl/Citadel) by Joannis Orlandos for SSH protocol implementation, [SwiftTerm](https://github.com/migueldeicaza/SwiftTerm) by Miguel de Icaza for terminal emulation and rendering, and [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts) for terminal font with Powerline and icon glyph support.
 
 ## License
 
