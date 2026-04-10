@@ -82,6 +82,10 @@ struct SessionListView: View {
               )
             }
           },
+          onSave: { config in
+            showingNewConnection = false
+            sessionManager.addSessionWithoutConnecting(config: config)
+          },
           onCancel: {
             showingNewConnection = false
           }

@@ -154,12 +154,10 @@ struct ConnectionConfigView: View {
 
   var body: some View {
     Form {
-      if onSave != nil {
-        Section("Session Name") {
-          TextField("Optional", text: $sessionName)
-            .autocorrectionDisabled()
-            .textInputAutocapitalization(.never)
-        }
+      Section("Session Name") {
+        TextField("Optional", text: $sessionName)
+          .autocorrectionDisabled()
+          .textInputAutocapitalization(.never)
       }
 
       Section("Server") {

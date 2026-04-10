@@ -117,6 +117,16 @@ final class SessionManager {
     persistSessions()
   }
 
+  func addSessionWithoutConnecting(config: ConnectionConfig) {
+    let sshManager = SSHManager()
+    let session = SSHSession(
+      config: config,
+      sshManager: sshManager
+    )
+    sessions.append(session)
+    persistSessions()
+  }
+
   func selectSession(_ id: UUID) {
     activeSessionID = id
 
